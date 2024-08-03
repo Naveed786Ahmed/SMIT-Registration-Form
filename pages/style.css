@@ -1,0 +1,1393 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* cursor: default; */
+    scroll-behavior: smooth;
+}
+
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.displayCard {
+    border-radius: 0px;
+    height: 13rem;
+    border: none;
+}
+
+.displayCardBody {
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.displayCardBody::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/bg-image.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.displayLogo {
+    width: 100%;
+    height: 33%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.displayText {
+    width: 100%;
+    height: 30%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.socialMedia {
+    width: 20%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.registrationText {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.studentPortal {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.studentPortalCont {
+    width: 70%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    color: #0066b3;
+    border: 1px solid #0066b3;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.SPtext {
+    font-size: 1rem;
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.servicesbox {
+    width: 100%;
+    height: 20%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .9rem;
+    font-family: "Roboto", sans-serif;
+    color: gray;
+}
+
+.socialMediaImgs {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: aliceblue;
+}
+
+@media only screen and (max-width: 850px) {
+    .displayCard {
+        border-radius: 0px;
+        height: 18rem;
+        border: none;
+    }
+
+    .displayLogo {
+        width: 100%;
+        height: 25%;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .displayText {
+        width: 100%;
+        height: 60%;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .socialMedia {
+        width: 30%;
+        height: 30%;
+        cursor: pointer;
+    }
+
+    .registrationText {
+        width: 100%;
+        height: 40%;
+        text-align: center;
+        padding: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.7rem;
+    }
+
+    .studentPortal {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .studentPortalCont {
+        width: 10rem;
+        height: 80%;
+        border: 1px solid #0066b3;
+        color: #0066b3;
+        border-radius: 30px;
+    }
+
+    .SPtext {
+        font-size: 1rem;
+        margin-left: 5px;
+        font-weight: 600;
+    }
+
+    .servicesbox {
+        width: 100%;
+        height: 15%;
+        position: relative;
+        z-index: 1;
+    }
+
+
+}
+
+@media (min-width: 850px) and (max-width: 1050px) {
+    .registrationText {
+        width: 70%;
+        height: 40%;
+        text-align: center;
+        padding: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 2rem;
+    }
+
+    .studentPortal {
+        width: 20%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .studentPortalCont {
+        width: 10rem;
+        height: 80%;
+        border: 1px solid #0066b3;
+        color: #0066b3;
+        border-radius: 30px;
+    }
+
+    .SPtext {
+        font-size: 1rem;
+        margin-left: 5px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .registrationText {
+        width: 100%;
+        height: 40%;
+        text-align: center;
+        padding: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.5rem;
+    }
+
+    .socialMedia {
+        width: 50%;
+        height: 30%;
+        cursor: pointer;
+    }
+
+    .studentPortal {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .studentPortalCont {
+        width: 8rem;
+        height: 70%;
+        border: 1px solid #0066b3;
+        color: #0066b3;
+        border-radius: 30px;
+    }
+
+    .SPtext {
+        font-size: .8rem;
+        margin-left: 5px;
+        font-weight: 600;
+    }
+
+    .tabBtns {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .tabBtns>a {
+        color: #0066b3;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 410px) {
+    .socialMedia {
+        width: 50%;
+        height: 30%;
+        cursor: pointer;
+    }
+
+    .tabBtns {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .tabBtns>a {
+        color: #0066b3;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.7rem;
+    }
+}
+
+.tabsBtn {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabBtns {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    color: #0066b3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.activated {
+    color: #90c44b;
+}
+
+.formContainer {
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.formContDiv {
+    width: 100%;
+    height: 90px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box1 {
+    width: 45%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: flex-start;
+    justify-items: flex-start;
+    flex-direction: column;
+    
+}
+
+.box2 {
+    width: 94%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: flex-start;
+    justify-items: flex-start;
+    flex-direction: column;
+}
+
+.inputdiv {
+    width: 100%;
+    height: 65%;
+    margin-top: 5px;
+}
+
+.inputLarge {
+    width: 100%;
+    height: 65%;
+    margin-top: 5px;
+}
+
+.labelName {
+    color: #0066b3;
+    cursor: default;
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inputs, .downinputs {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid #90c44b;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 0.9rem;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.inputs:focus, .downinputs:focus {
+    outline: none;
+    border: 1px solid #0091ff;
+}
+
+.formImgDiv {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box3 {
+    width: 93%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 5px;
+}
+
+.inputImg {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.image-box {
+    margin-top: 10px;
+    width: 150px; /* Passport size box width */
+    height: 150px; /* Passport size box height */
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 2px;
+    display: none;
+}
+
+.image-box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#errorImgMess{
+    color: red;
+    padding: 2px;
+    font-weight: 600;
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5px;
+    display: none;
+}
+
+.Imginstructions {
+    width: 100%;
+    height: auto;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #0091ff;
+}
+
+.instructionDiv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instructionCont {
+    width: 96%;
+    height: 100%;
+    padding: 5px;
+}
+
+.listCont {
+    font-size: .9rem;
+}
+
+.subBtn {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sbbtn {
+    width: 93%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.downloadCont {
+    height: auto;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box4 {
+    width: 50%;
+    height: auto;
+    padding: 5px;
+}
+
+#ErrorModal{
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: none;
+
+}
+
+.downloadLabel {
+    color: #0066b3;
+    cursor: default;
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.downloadinputs {
+    width: 100%;
+    height: 3rem;
+    margin-top: 5px;
+    font-size: .8rem;
+}
+
+.downloadSubDiv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.downloadSub {
+    width: 100%;
+    font-size: .9rem;
+    border: none;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#errorMess{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    display: none;
+}
+
+.errorMessText{
+    width: 90%;
+    height: auto;
+    padding: 5px;
+    color: red;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#detailTable{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: none;
+}
+
+.InfoTableHead, #tableBody{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.courseEvent{
+    width: 40%;
+    height: 40px;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.batch{
+    width: 25%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.action{
+    width: 35%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 0.9rem;
+    padding-left: 5px;
+    color: black;
+}
+
+#downBtn{
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 850px) {
+    .formContDiv {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .box1 {
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        display: flex;
+        align-items: flex-start;
+        justify-items: flex-start;
+        flex-direction: column;
+    }
+
+    .inputdiv {
+        width: 100%;
+        height: 50px;
+        margin-top: 5px;
+    }
+
+    .labelName {
+        color: #0066b3;
+    }
+
+    .inputs,.downinputs {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        border: 1px solid #90c44b;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .inputs:focus, .downinputs:hover {
+        outline: none;
+        border: 1px solid #0091ff;
+    }
+
+    .box2 {
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        display: flex;
+        align-items: flex-start;
+        justify-items: flex-start;
+        flex-direction: column;
+    }
+
+    .inputLarge {
+        width: 100%;
+        height: 50px;
+        margin-top: 5px;
+    }
+
+    .formImgDiv {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box3 {
+        width: 95%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 5px;
+    }
+
+    .inputImg {
+        width: 100%;
+        height: 65%;
+        margin-top: 5px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .Imginstructions {
+        width: 100%;
+        height: auto;
+        font-size: 0.9rem;
+    }
+
+    .instructionDiv {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .instructionCont {
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+    }
+
+    .downloadCont {
+        height: auto;
+        padding: 10px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box4 {
+        width: 80%;
+        height: auto;
+        padding: 5px;
+    }
+
+    .downloadLabel {
+        color: #0066b3;
+        cursor: default;
+        font-size: 0.8rem;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .downloadinputs {
+        width: 100%;
+        height: 3rem;
+        margin-top: 5px;
+        font-size: .8rem;
+    }
+
+    .downloadSubDiv {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .downloadSub {
+        width: 100%;
+        font-size: .9rem;
+        border: none;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .box4 {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+
+    .downloadLabel {
+        color: #0066b3;
+        cursor: default;
+        font-size: 0.8rem;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .downloadinputs {
+        width: 100%;
+        height: 3rem;
+        margin-top: 5px;
+        font-size: .6rem;
+    }
+
+    .downloadSubDiv {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .downloadSub {
+        width: 100%;
+        font-size: .9rem;
+        border: none;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 850px) and (max-width: 1050px) {
+    .box4 {
+        width: 60%;
+        height: auto;
+        padding: 5px;
+    }
+
+    .downloadLabel {
+        color: #0066b3;
+        cursor: default;
+        font-size: 0.8rem;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .downloadinputs {
+        width: 100%;
+        height: 3rem;
+        margin-top: 5px;
+        font-size: .6rem;
+    }
+
+    .downloadSubDiv {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .downloadSub {
+        width: 100%;
+        font-size: .9rem;
+        border: none;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 1050px) and (max-width: 1200px){
+    .SPtext {
+        font-size: .8rem;
+        margin-left: 5px;
+        font-weight: 600;
+    }
+    .socialMedia {
+        width: 17%;
+        height: 100%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1660px){
+    .socialMedia {
+        width: 13%;
+        height: 100%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+.inputs.error {
+    border: 1px solid red;
+}
+
+.StudentContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    margin-top: 30px;
+}
+
+.StudentCard{
+    width: 50%;
+    height: 500px;
+    border: 1px dashed;
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.StudentCardDesign{
+    width: 60%;
+    height: 90%;
+    border: 1px solid;
+}
+
+.StuCardHeader{
+    width: 100%;
+    height: 30px;
+    background-color: #0066b3;
+}
+
+.StuCardFooter{
+    width: 100%;
+    height: 10px;
+    background-color: #0066b3;   
+}
+
+#StuCardFooter2{
+    width: 100%;
+    height: 40.5px;
+    background-color: #90c44b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 600; 
+}
+
+.StuCardHeader2{
+    width: 100%;
+    height: 10px;
+    background-color: #90c44b;
+}
+
+.SMITLOGO{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.UserCardImgCont{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#UserCardImgBox{
+    width: 45%;
+    height: 100%;
+    border: 2px solid #90c44b;
+    padding: 2px;
+}
+
+#studentName{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+}
+
+#courseName{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.nameBox{
+    width: 100%;
+    height: auto;
+    padding-left: 10px;
+    margin-top: 5px;
+    display: flex;
+    font-size: .8rem;
+    align-items: center;
+}
+.Info{
+    width: autp;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5px;
+    margin-left: 2px;
+    font-size: 1rem;
+}
+
+.barImageCont{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.barImage{
+    width: 40%;
+    height: 100%;
+    padding: 3px;
+}
+
+.Note{
+    width: 100%;
+    height: auto;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px;
+}
+
+.sign{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.IsuuSign{
+    width: 50%;
+    height: auto;
+    padding: 5px;
+    font-weight: 600;
+    font-size: .7rem;
+    border-top: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (min-width: 1000px) and (max-width: 1200px){
+    .StudentCard{
+        width: 50%;
+        height: 550;
+        border: 1px dashed;
+        padding: 30px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .StudentCardDesign{
+        width: 70%;
+        height: auto;
+        border: 1px solid;
+    }
+}
+
+@media (min-width: 340px) and (max-width: 450px){
+    .StudentContainer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .StudentCard{
+        width: 95%;
+        height: 550;
+        border: 1px dashed;
+        padding: 30px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .StudentCardDesign{
+        width: 90%;
+        height: auto;
+        border: 1px solid;
+    }
+    .UserCardImgCont{
+        width: 100%;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #UserCardImgBox{
+        width: 50%;
+        height: 100%;
+        border: 2px solid #90c44b;
+        padding: 2px;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 760px){
+    .StudentContainer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .StudentCard{
+        width: 75%;
+        height: 550;
+        border: 1px dashed;
+        padding: 30px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .StudentCardDesign{
+        width: 100%;
+        height: auto;
+        border: 1px solid;
+    }
+    .UserCardImgCont{
+        width: 100%;
+        height: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #UserCardImgBox{
+        width: 50%;
+        height: 100%;
+        border: 2px solid #90c44b;
+        padding: 2px;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 900px){
+    .StudentContainer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .StudentCard{
+        width: 60%;
+        height: 550;
+        border: 1px dashed;
+        padding: 30px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .StudentCardDesign{
+        width: 100%;
+        height: auto;
+        border: 1px solid;
+    }
+    .UserCardImgCont{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #UserCardImgBox{
+        width: 50%;
+        height: 100%;
+        border: 2px solid #90c44b;
+        padding: 2px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1000px){
+    .StudentContainer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .StudentCard{
+        width: 60%;
+        height: 550;
+        border: 1px dashed;
+        padding: 30px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .StudentCardDesign{
+        width: 100%;
+        height: auto;
+        border: 1px solid;
+    }
+    .UserCardImgCont{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #UserCardImgBox{
+        width: 50%;
+        height: 100%;
+        border: 2px solid #90c44b;
+        padding: 2px;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1650px){
+    .StudentContainer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+    .StudentCard{
+        width: 30%;
+        height: 550;
+        border: 1px dashed;
+        padding: 30px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .StudentCardDesign{
+        width: 100%;
+        height: auto;
+        border: 1px solid;
+    }
+    .UserCardImgCont{
+        width: 100%;
+        height: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #UserCardImgBox{
+        width: 50%;
+        height: 100%;
+        border: 2px solid #90c44b;
+        padding: 2px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 340px){
+    .StudentContainer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .StudentCard{
+        width: 95%;
+        height: 550;
+        border: 1px dashed;
+        padding: 30px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .StudentCardDesign{
+        width: 100%;
+        height: auto;
+        border: 1px solid;
+    }
+    .UserCardImgCont{
+        width: 100%;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #UserCardImgBox{
+        width: 50%;
+        height: 100%;
+        border: 2px solid #90c44b;
+        padding: 2px;
+    }
+}
+
+.submittedCard{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.submittedForm{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Thanks{
+    width: 100%;
+    padding: 5px;
+    font-size: 2rem;
+    color: blue;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.subMess{
+    width: 100%;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    color: #0091ff;
+}
+
+.goHomeBtn{
+    width: 100%;
+    font-weight: 600;
+}
