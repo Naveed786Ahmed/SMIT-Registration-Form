@@ -33,6 +33,7 @@ const downSubBtnFunx = async () => {
     let UserCNICCard = document.getElementById("UserCNICCard");
     let courseCard = document.getElementById("courseCard");
     let ErrorModal = document.getElementById("ErrorModal");
+    let downLoad = document.getElementById("downLoad");
     
     console.log(downCNICValue);
 

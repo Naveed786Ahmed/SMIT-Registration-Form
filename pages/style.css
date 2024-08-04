@@ -379,7 +379,7 @@ a {
     align-items: flex-start;
     justify-items: flex-start;
     flex-direction: column;
-    
+
 }
 
 .box2 {
@@ -411,7 +411,8 @@ a {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.inputs, .downinputs {
+.inputs,
+.downinputs {
     width: 100%;
     height: 100%;
     border-radius: 5px;
@@ -423,7 +424,8 @@ a {
     cursor: pointer;
 }
 
-.inputs:focus, .downinputs:focus {
+.inputs:focus,
+.downinputs:focus {
     outline: none;
     border: 1px solid #0091ff;
 }
@@ -462,8 +464,10 @@ a {
 
 .image-box {
     margin-top: 10px;
-    width: 150px; /* Passport size box width */
-    height: 150px; /* Passport size box height */
+    width: 150px;
+    /* Passport size box width */
+    height: 150px;
+    /* Passport size box height */
     border: 1px solid #ddd;
     display: flex;
     align-items: center;
@@ -474,11 +478,11 @@ a {
 }
 
 .image-box img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
-#errorImgMess{
+#errorImgMess {
     color: red;
     padding: 2px;
     font-weight: 600;
@@ -544,7 +548,7 @@ a {
     padding: 5px;
 }
 
-#ErrorModal{
+#ErrorModal {
     width: 100%;
     height: 60px;
     margin-top: 20px;
@@ -590,7 +594,7 @@ a {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-#errorMess{
+#errorMess {
     width: 100%;
     height: auto;
     display: flex;
@@ -600,7 +604,7 @@ a {
     display: none;
 }
 
-.errorMessText{
+.errorMessText {
     width: 90%;
     height: auto;
     padding: 5px;
@@ -612,14 +616,15 @@ a {
     justify-content: center;
 }
 
-#detailTable{
+#detailTable {
     width: 100%;
     height: auto;
     margin-top: 20px;
     display: none;
 }
 
-.InfoTableHead, #tableBody{
+.InfoTableHead,
+#tableBody {
     width: 100%;
     height: auto;
     padding: 5px;
@@ -628,7 +633,7 @@ a {
     justify-content: space-evenly;
 }
 
-.courseEvent{
+.courseEvent {
     width: 40%;
     height: 40px;
     padding-left: 5px;
@@ -639,7 +644,7 @@ a {
     color: black;
 }
 
-.batch{
+.batch {
     width: 25%;
     height: 40px;
     display: flex;
@@ -649,7 +654,7 @@ a {
     color: black;
 }
 
-.action{
+.action {
     width: 35%;
     height: 40px;
     display: flex;
@@ -660,7 +665,7 @@ a {
     color: black;
 }
 
-#downBtn{
+#downBtn {
     font-size: .9rem;
     font-weight: 500;
 }
@@ -695,7 +700,8 @@ a {
         color: #0066b3;
     }
 
-    .inputs,.downinputs {
+    .inputs,
+    .downinputs {
         width: 100%;
         height: 100%;
         border-radius: 5px;
@@ -705,7 +711,8 @@ a {
         padding-right: 10px;
     }
 
-    .inputs:focus, .downinputs:hover {
+    .inputs:focus,
+    .downinputs:hover {
         outline: none;
         border: 1px solid #0091ff;
     }
@@ -903,12 +910,13 @@ a {
     }
 }
 
-@media (min-width: 1050px) and (max-width: 1200px){
+@media (min-width: 1050px) and (max-width: 1200px) {
     .SPtext {
         font-size: .8rem;
         margin-left: 5px;
         font-weight: 600;
     }
+
     .socialMedia {
         width: 17%;
         height: 100%;
@@ -919,7 +927,7 @@ a {
     }
 }
 
-@media (min-width: 1200px) and (max-width: 1660px){
+@media (min-width: 1200px) and (max-width: 1660px) {
     .socialMedia {
         width: 13%;
         height: 100%;
@@ -934,7 +942,7 @@ a {
     border: 1px solid red;
 }
 
-.StudentContainer{
+.StudentContainer {
     width: 100%;
     height: auto;
     display: flex;
@@ -944,7 +952,7 @@ a {
     margin-top: 30px;
 }
 
-.StudentCard{
+.StudentCard {
     width: 50%;
     height: 500px;
     border: 1px dashed;
@@ -954,25 +962,25 @@ a {
     justify-content: center;
 }
 
-.StudentCardDesign{
+.StudentCardDesign {
     width: 60%;
     height: 90%;
     border: 1px solid;
 }
 
-.StuCardHeader{
+.StuCardHeader {
     width: 100%;
     height: 30px;
     background-color: #0066b3;
 }
 
-.StuCardFooter{
+.StuCardFooter {
     width: 100%;
     height: 10px;
-    background-color: #0066b3;   
+    background-color: #0066b3;
 }
 
-#StuCardFooter2{
+#StuCardFooter2 {
     width: 100%;
     height: 40.5px;
     background-color: #90c44b;
@@ -980,24 +988,24 @@ a {
     align-items: center;
     justify-content: center;
     font-size: 1rem;
-    font-weight: 600; 
+    font-weight: 600;
 }
 
-.StuCardHeader2{
+.StuCardHeader2 {
     width: 100%;
     height: 10px;
     background-color: #90c44b;
 }
 
-.SMITLOGO{
+.SMITLOGO {
     width: 100%;
     height: 90px;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
-.UserCardImgCont{
+.UserCardImgCont {
     width: 100%;
     height: 120px;
     display: flex;
@@ -1005,14 +1013,17 @@ a {
     justify-content: center;
 }
 
-#UserCardImgBox{
+#UserCardImgBox {
     width: 45%;
     height: 100%;
     border: 2px solid #90c44b;
     padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#studentName{
+#studentName {
     width: 100%;
     height: auto;
     padding: 5px;
@@ -1024,7 +1035,7 @@ a {
     color: blue;
 }
 
-#courseName{
+#courseName {
     width: 100%;
     height: auto;
     padding: 5px;
@@ -1035,7 +1046,7 @@ a {
     color: black;
 }
 
-.nameBox{
+.nameBox {
     width: 100%;
     height: auto;
     padding-left: 10px;
@@ -1044,7 +1055,8 @@ a {
     font-size: .8rem;
     align-items: center;
 }
-.Info{
+
+.Info {
     width: autp;
     text-decoration: underline;
     display: flex;
@@ -1055,7 +1067,7 @@ a {
     font-size: 1rem;
 }
 
-.barImageCont{
+.barImageCont {
     width: 100%;
     height: 100px;
     display: flex;
@@ -1064,13 +1076,13 @@ a {
     margin-top: 10px;
 }
 
-.barImage{
+.barImage {
     width: 40%;
     height: 100%;
     padding: 3px;
 }
 
-.Note{
+.Note {
     width: 100%;
     height: auto;
     font-size: 0.8rem;
@@ -1079,7 +1091,7 @@ a {
     padding: 5px;
 }
 
-.sign{
+.sign {
     width: 100%;
     height: auto;
     margin-top: 50px;
@@ -1088,7 +1100,7 @@ a {
     justify-content: center;
 }
 
-.IsuuSign{
+.IsuuSign {
     width: 50%;
     height: auto;
     padding: 5px;
@@ -1101,8 +1113,8 @@ a {
 }
 
 
-@media (min-width: 1000px) and (max-width: 1200px){
-    .StudentCard{
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .StudentCard {
         width: 50%;
         height: 550;
         border: 1px dashed;
@@ -1111,15 +1123,16 @@ a {
         align-items: center;
         justify-content: center;
     }
-    .StudentCardDesign{
+
+    .StudentCardDesign {
         width: 70%;
         height: auto;
         border: 1px solid;
     }
 }
 
-@media (min-width: 340px) and (max-width: 450px){
-    .StudentContainer{
+@media (min-width: 340px) and (max-width: 450px) {
+    .StudentContainer {
         width: 100%;
         height: auto;
         display: flex;
@@ -1128,7 +1141,8 @@ a {
         flex-direction: column;
         flex-wrap: nowrap;
     }
-    .StudentCard{
+
+    .StudentCard {
         width: 95%;
         height: 550;
         border: 1px dashed;
@@ -1137,29 +1151,34 @@ a {
         align-items: center;
         justify-content: center;
     }
-    .StudentCardDesign{
+
+    .StudentCardDesign {
         width: 90%;
         height: auto;
         border: 1px solid;
     }
-    .UserCardImgCont{
+
+    .UserCardImgCont {
         width: 100%;
         height: 120px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
-    #UserCardImgBox{
+
+    #UserCardImgBox {
         width: 50%;
         height: 100%;
         border: 2px solid #90c44b;
         padding: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
-@media (min-width: 450px) and (max-width: 760px){
-    .StudentContainer{
+@media (min-width: 450px) and (max-width: 760px) {
+    .StudentContainer {
         width: 100%;
         height: auto;
         display: flex;
@@ -1168,7 +1187,8 @@ a {
         flex-direction: column;
         flex-wrap: nowrap;
     }
-    .StudentCard{
+
+    .StudentCard {
         width: 75%;
         height: 550;
         border: 1px dashed;
@@ -1177,29 +1197,34 @@ a {
         align-items: center;
         justify-content: center;
     }
-    .StudentCardDesign{
+
+    .StudentCardDesign {
         width: 100%;
         height: auto;
         border: 1px solid;
     }
-    .UserCardImgCont{
+
+    .UserCardImgCont {
         width: 100%;
         height: 140px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
-    #UserCardImgBox{
+
+    #UserCardImgBox {
         width: 50%;
         height: 100%;
         border: 2px solid #90c44b;
         padding: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
-@media (min-width: 750px) and (max-width: 900px){
-    .StudentContainer{
+@media (min-width: 750px) and (max-width: 900px) {
+    .StudentContainer {
         width: 100%;
         height: auto;
         display: flex;
@@ -1208,7 +1233,8 @@ a {
         flex-direction: column;
         flex-wrap: nowrap;
     }
-    .StudentCard{
+
+    .StudentCard {
         width: 60%;
         height: 550;
         border: 1px dashed;
@@ -1217,29 +1243,34 @@ a {
         align-items: center;
         justify-content: center;
     }
-    .StudentCardDesign{
+
+    .StudentCardDesign {
         width: 100%;
         height: auto;
         border: 1px solid;
     }
-    .UserCardImgCont{
+
+    .UserCardImgCont {
         width: 100%;
         height: 150px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
-    #UserCardImgBox{
+
+    #UserCardImgBox {
         width: 50%;
         height: 100%;
         border: 2px solid #90c44b;
         padding: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
-@media (min-width: 900px) and (max-width: 1000px){
-    .StudentContainer{
+@media (min-width: 900px) and (max-width: 1000px) {
+    .StudentContainer {
         width: 100%;
         height: auto;
         display: flex;
@@ -1248,7 +1279,8 @@ a {
         flex-direction: column;
         flex-wrap: nowrap;
     }
-    .StudentCard{
+
+    .StudentCard {
         width: 60%;
         height: 550;
         border: 1px dashed;
@@ -1257,29 +1289,34 @@ a {
         align-items: center;
         justify-content: center;
     }
-    .StudentCardDesign{
+
+    .StudentCardDesign {
         width: 100%;
         height: auto;
         border: 1px solid;
     }
-    .UserCardImgCont{
+
+    .UserCardImgCont {
         width: 100%;
         height: 150px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
-    #UserCardImgBox{
+
+    #UserCardImgBox {
         width: 50%;
         height: 100%;
         border: 2px solid #90c44b;
         padding: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
-@media (min-width: 1300px) and (max-width: 1650px){
-    .StudentContainer{
+@media (min-width: 1300px) and (max-width: 1650px) {
+    .StudentContainer {
         width: 100%;
         height: auto;
         display: flex;
@@ -1287,7 +1324,8 @@ a {
         justify-content: space-evenly;
         flex-wrap: nowrap;
     }
-    .StudentCard{
+
+    .StudentCard {
         width: 30%;
         height: 550;
         border: 1px dashed;
@@ -1296,29 +1334,34 @@ a {
         align-items: center;
         justify-content: center;
     }
-    .StudentCardDesign{
+
+    .StudentCardDesign {
         width: 100%;
         height: auto;
         border: 1px solid;
     }
-    .UserCardImgCont{
+
+    .UserCardImgCont {
         width: 100%;
         height: 130px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
-    #UserCardImgBox{
+
+    #UserCardImgBox {
         width: 50%;
         height: 100%;
         border: 2px solid #90c44b;
         padding: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
-@media (min-width: 200px) and (max-width: 340px){
-    .StudentContainer{
+@media (min-width: 200px) and (max-width: 340px) {
+    .StudentContainer {
         width: 100%;
         height: auto;
         display: flex;
@@ -1327,7 +1370,8 @@ a {
         flex-direction: column;
         flex-wrap: nowrap;
     }
-    .StudentCard{
+
+    .StudentCard {
         width: 95%;
         height: 550;
         border: 1px dashed;
@@ -1336,39 +1380,44 @@ a {
         align-items: center;
         justify-content: center;
     }
-    .StudentCardDesign{
+
+    .StudentCardDesign {
         width: 100%;
         height: auto;
         border: 1px solid;
     }
-    .UserCardImgCont{
+
+    .UserCardImgCont {
         width: 100%;
         height: 120px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
-    #UserCardImgBox{
+
+    #UserCardImgBox {
         width: 50%;
         height: 100%;
         border: 2px solid #90c44b;
         padding: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
-.submittedCard{
+.submittedCard {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.submittedForm{
+.submittedForm {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.Thanks{
+.Thanks {
     width: 100%;
     padding: 5px;
     font-size: 2rem;
@@ -1378,7 +1427,7 @@ a {
     font-family: "Roboto", sans-serif;
 }
 
-.subMess{
+.subMess {
     width: 100%;
     padding: 5px;
     font-size: 1rem;
@@ -1387,7 +1436,15 @@ a {
     color: #0091ff;
 }
 
-.goHomeBtn{
+.goHomeBtn {
     width: 100%;
     font-weight: 600;
+}
+
+#loads {
+    display: none;
+}
+
+#downLoad {
+    display: none;
 }

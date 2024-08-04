@@ -89,6 +89,8 @@ const subBtnFunx = () => {
         let qualification = document.getElementById("qualification").value;
         let laptopHai = document.getElementById("laptopHai").value;
         let passportImage = document.getElementById("passportImage");
+        let loads = document.getElementById("loads");
+        let indexSub = document.getElementById("indexSub");
         let imgName = passportImage.files[0]
 
         const storageRef = ref(storage, imgName.name);
@@ -96,6 +98,7 @@ const subBtnFunx = () => {
 
         uploadTask.on('state_changed',
             (snapshot) => {
+                indexSub.innerHTML = "Loading..."
                 const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
                 console.log('Upload is ' + progress + '% done');
                 switch (snapshot.state) {
@@ -131,6 +134,7 @@ const subBtnFunx = () => {
                         laptop: laptopHai,
                         image: downloadURL,
                     });
+
                     location.pathname = "/pages/submitted.html"
                 });
             }

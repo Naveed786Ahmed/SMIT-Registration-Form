@@ -170,7 +170,8 @@
             <div class="box1">
                 <div class="labelName">CNIC</div>
                 <div class="inputdiv">
-                    <input type="text" id="userCNIC" class="inputs" placeholder="Enter your CNIC Number (13 digits, no dashes)" required>
+                    <input type="text" id="userCNIC" class="inputs"
+                        placeholder="Enter your CNIC Number (13 digits, no dashes)" required>
                 </div>
             </div>
             <div class="box1">
@@ -242,7 +243,7 @@
                 <div class="inputImg">
                     <input type="file" id="passportImage">
                     <p id="errorImgMess">
-                        
+
                     </p>
                     <div id="imagePreview" class="image-box">
 
@@ -278,7 +279,12 @@
                 form.</p>
         </div>
         <div class="subBtn">
-            <div class="btn btn-primary sbbtn" id="subBtn">SUBMIT</div>
+            <div class="btn btn-primary sbbtn" id="subBtn">
+                <div class="spinner-border text-light" id="loads" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <span id="indexSub">SUBMIT</span>
+            </div>
         </div>
     </div>
 
