@@ -1,1 +1,1 @@
-Check It Out https://smitregistrationform.surge.sh/
+Check It Out https://smitregistratonform.surge.sh/index.html
