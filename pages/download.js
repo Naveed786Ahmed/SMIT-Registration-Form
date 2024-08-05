@@ -34,6 +34,7 @@ const downSubBtnFunx = async () => {
     let courseCard = document.getElementById("courseCard");
     let ErrorModal = document.getElementById("ErrorModal");
     let downLoad = document.getElementById("downLoad");
+    let courseEvent = document.getElementById("courseEvent")
     
     console.log(downCNICValue);
 
@@ -43,6 +44,7 @@ const downSubBtnFunx = async () => {
     if (docSnap.exists()) {
         console.log("Document data:", docSnap.data());
         detailTable.style.display = "block"
+        courseEvent.innerHTML = docSnap.data().courseName
         UserCardImgBox.innerHTML = `
             <img src="${docSnap.data().image}" alt="" width="100%" height="100%">
         `
